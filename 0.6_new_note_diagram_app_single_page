@@ -5,8 +5,8 @@ participant server
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
-    server-->>browser: Payload that contains the created resource
+    server-->>browser: Response containing the created resource data
     deactivate server
 
-    Note right of browser: The browser executes the callback function that renders the notes
+    Note right of browser: The browser runs the callback function to display the notes
 ```
